@@ -1,0 +1,10 @@
+{
+    "port": 6969,
+    "exit_command": "EXIT",
+    "handshake_message": "Hello",
+    "success_reply_code": 64,
+    "login_code": 1,
+    "signup_code": 2,
+    "code_length": 1,
+    "data_size_length": 5
+}

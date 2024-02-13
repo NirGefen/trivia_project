@@ -1,0 +1,37 @@
+﻿<Window x:Name="CreateRoomWindow" x:Class="TriviaGUI.CreateRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriviaGUI"
+        mc:Ignorable="d"
+        Title="Create Room" Height="519" Width="592" Background="#FFD6EAB9" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="RoomName" Content="Room Name" HorizontalAlignment="Left" Height="52.43" Margin="40.5,118.648,0,0" VerticalAlignment="Top" Width="172.356" FontWeight="Bold" FontSize="20" FontFamily="Rockwell Extra Bold"/>
+        <TextBox x:Name="RoomNameInput" HorizontalAlignment="Left" Height="36.443" Margin="313.945,128.615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203.133" Foreground="White" Background="Black" IsEnabled="True"/>
+        <Button x:Name="CreateRoomButton" Content="Create Room&#xD;&#xA;" HorizontalAlignment="Left" Height="47.872" Margin="234.318,384.196,0,0" VerticalAlignment="Top" Width="139.116" FontWeight="Bold" FontSize="20" Click="OnClickCreateRoom" FontFamily="Rockwell">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF404443" Offset="0.096"/>
+                    <GradientStop Color="#FF00AEFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="NumOfPlayers" Content="Number of players" HorizontalAlignment="Left" Height="52.43" Margin="40.5,176.078,0,0" VerticalAlignment="Top" Width="235.79" FontWeight="Bold" FontSize="20" FontFamily="Rockwell Extra Bold"/>
+        <TextBox x:Name="NumOfPlayersInput" HorizontalAlignment="Left" Height="36.443" Margin="313.945,181.355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203.133" Foreground="White" Background="Black" IsEnabled="True"/>
+        <Label x:Name="NumOfQuestions" Content="Number of questions&#xD;&#xA;" HorizontalAlignment="Left" Height="52.43" Margin="40.5,235.054,0,0" VerticalAlignment="Top" Width="266.29" FontWeight="Bold" FontSize="20" FontFamily="Rockwell Extra Bold"/>
+        <TextBox x:Name="NumOfQuestionsInput" HorizontalAlignment="Left" Height="36.443" Margin="313.945,235.054,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203.133" Foreground="White" Background="Black" IsEnabled="True"/>
+        <Button x:Name="ArrowBackButton" Content="←" HorizontalAlignment="Left" Height="59.767" VerticalAlignment="Top" Width="46.782" FontWeight="Bold" FontSize="25" Click="OnClickArrowBack" FontFamily="Ravie">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF404443" Offset="0.096"/>
+                    <GradientStop Color="#FF00AEFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="TimeForQuestion" Content="Time for question&#xA;" HorizontalAlignment="Left" Height="52.43" Margin="40.5,292.484,0,0" VerticalAlignment="Top" Width="266.29" FontWeight="Bold" FontSize="20" FontFamily="Rockwell Extra Bold"/>
+        <TextBox x:Name="TimeForQuestionInput" HorizontalAlignment="Left" Height="36.443" Margin="313.945,292.484,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203.133" Foreground="White" Background="Black" IsEnabled="True"/>
+        <Label x:Name="Title" Content="Create Room" HorizontalAlignment="Left" Height="90.467" Margin="97.182,23.181,-36.485,0" VerticalAlignment="Top" Width="525.303" FontWeight="Bold" FontSize="72" FontFamily="Segoe UI Light"/>
+
+    </Grid>
+</Window>

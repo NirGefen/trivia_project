@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{DE89E885-BC57-4FA9-B4EF-DE3DB3BC0C5A}</ProjectGuid>
+    <RootNamespace>server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\nlohmann;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)include\lib\cpprest</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cpprest_2_10d.lib;zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CloseRoomResponse.h" />
+    <ClInclude Include="Communicator.h" />
+    <ClInclude Include="configConstants.h" />
+    <ClInclude Include="CreateRoomRequest.h" />
+    <ClInclude Include="CreateRoomResponse.h" />
+    <ClInclude Include="ErrorResponse.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="GameDoesNotExistException.h" />
+    <ClInclude Include="GameException.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameQuestion.h" />
+    <ClInclude Include="GameRequestHandler.h" />
+    <ClInclude Include="GameUser.h" />
+    <ClInclude Include="GetGameResultsResponse.h" />
+    <ClInclude Include="GetPlayersInRoomRequest.h" />
+    <ClInclude Include="GetPlayersInRoomResponse.h" />
+    <ClInclude Include="GetQuestionResponse.h" />
+    <ClInclude Include="GetQuestionResponseAnswer.h" />
+    <ClInclude Include="GetRoomsResponse.h" />
+    <ClInclude Include="GetRoomStateResponse.h" />
+    <ClInclude Include="GetStatisticsResponse.h" />
+    <ClInclude Include="HandshakeException.h" />
+    <ClInclude Include="IDatabase.h" />
+    <ClInclude Include="include\brotli\decode.h" />
+    <ClInclude Include="include\brotli\encode.h" />
+    <ClInclude Include="include\brotli\port.h" />
+    <ClInclude Include="include\brotli\types.h" />
+    <ClInclude Include="include\cpprest\astreambuf.h" />
+    <ClInclude Include="include\cpprest\asyncrt_utils.h" />
+    <ClInclude Include="include\cpprest\base_uri.h" />
+    <ClInclude Include="include\cpprest\containerstream.h" />
+    <ClInclude Include="include\cpprest\details\basic_types.h" />
+    <ClInclude Include="include\cpprest\details\cpprest_compat.h" />
+    <ClInclude Include="include\cpprest\details\fileio.h" />
+    <ClInclude Include="include\cpprest\details\http_helpers.h" />
+    <ClInclude Include="include\cpprest\details\http_server.h" />
+    <ClInclude Include="include\cpprest\details\http_server_api.h" />
+    <ClInclude Include="include\cpprest\details\nosal.h" />
+    <ClInclude Include="include\cpprest\details\resource.h" />
+    <ClInclude Include="include\cpprest\details\SafeInt3.hpp" />
+    <ClInclude Include="include\cpprest\details\web_utilities.h" />
+    <ClInclude Include="include\cpprest\filestream.h" />
+    <ClInclude Include="include\cpprest\http_client.h" />
+    <ClInclude Include="include\cpprest\http_compression.h" />
+    <ClInclude Include="include\cpprest\http_headers.h" />
+    <ClInclude Include="include\cpprest\http_listener.h" />
+    <ClInclude Include="include\cpprest\http_msg.h" />
+    <ClInclude Include="include\cpprest\interopstream.h" />
+    <ClInclude Include="include\cpprest\json.h" />
+    <ClInclude Include="include\cpprest\oauth1.h" />
+    <ClInclude Include="include\cpprest\oauth2.h" />
+    <ClInclude Include="include\cpprest\producerconsumerstream.h" />
+    <ClInclude Include="include\cpprest\rawptrstream.h" />
+    <ClInclude Include="include\cpprest\streams.h" />
+    <ClInclude Include="include\cpprest\uri.h" />
+    <ClInclude Include="include\cpprest\uri_builder.h" />
+    <ClInclude Include="include\cpprest\version.h" />
+    <ClInclude Include="include\cpprest\ws_client.h" />
+    <ClInclude Include="include\cpprest\ws_msg.h" />
+    <ClInclude Include="include\nlohmann\json.hpp" />
+    <ClInclude Include="include\pplx\pplx.h" />
+    <ClInclude Include="include\pplx\pplxcancellation_token.h" />
+    <ClInclude Include="include\pplx\pplxconv.h" />
+    <ClInclude Include="include\pplx\pplxinterface.h" />
+    <ClInclude Include="include\pplx\pplxlinux.h" />
+    <ClInclude Include="include\pplx\pplxtasks.h" />
+    <ClInclude Include="include\pplx\pplxwin.h" />
+    <ClInclude Include="include\zconf.h" />
+    <ClInclude Include="include\zlib.h" />
+    <ClInclude Include="InvalidJsonException.h" />
+    <ClInclude Include="IRequestHandler.h" />
+    <ClInclude Include="JoinRoomRequest.h" />
+    <ClInclude Include="JoinRoomResponse.h" />
+    <ClInclude Include="JsonRequestPacketDeserializer.h" />
+    <ClInclude Include="JsonResponsePacketSerializer.h" />
+    <ClInclude Include="LeaveGameResponse.h" />
+    <ClInclude Include="LeaveRoomResponse.h" />
+    <ClInclude Include="LoggedUser.h" />
+    <ClInclude Include="LoginManager.h" />
+    <ClInclude Include="LoginRequest.h" />
+    <ClInclude Include="LoginRequestHandler.h" />
+    <ClInclude Include="LoginResponse.h" />
+    <ClInclude Include="LogoutResponse.h" />
+    <ClInclude Include="MenuRequestHandler.h" />
+    <ClInclude Include="PlayerResults.h" />
+    <ClInclude Include="protocolHeaderCodes.h" />
+    <ClInclude Include="QueryFailureException.h" />
+    <ClInclude Include="Question.h" />
+    <ClInclude Include="RequestHandlerFactory.h" />
+    <ClInclude Include="RequestInfo.h" />
+    <ClInclude Include="RequestResult.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="RoomAdminRequestHandler.h" />
+    <ClInclude Include="RoomData.h" />
+    <ClInclude Include="RoomDoesNotExistException.h" />
+    <ClInclude Include="RoomManager.h" />
+    <ClInclude Include="RoomMaxPlayersLimitReachedException.h" />
+    <ClInclude Include="RoomMemberRequestHandler.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerConfigurationException.h" />
+    <ClInclude Include="ServerConfigurationInvalidJsonException.h" />
+    <ClInclude Include="ServerConfigurationLoadFileException.h" />
+    <ClInclude Include="ServerConfigurationMissingKeyException.h" />
+    <ClInclude Include="SignupRequest.h" />
+    <ClInclude Include="SignupResponse.h" />
+    <ClInclude Include="SocketManager.h" />
+    <ClInclude Include="SocketManagerException.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="SqliteDatabase.h" />
+    <ClInclude Include="StartGameResponse.h" />
+    <ClInclude Include="StatisticsManager.h" />
+    <ClInclude Include="SubmitAnswerRequest.h" />
+    <ClInclude Include="SubmitAnswerResponse.h" />
+    <ClInclude Include="TriviaQuestionsApi.h" />
+    <ClInclude Include="typedefs.h" />
+    <ClInclude Include="UserStatistics.h" />
+    <ClInclude Include="WSAInitializer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CloseRoomResponse.cpp" />
+    <ClCompile Include="Communicator.cpp" />
+    <ClCompile Include="CreateRoomRequest.cpp" />
+    <ClCompile Include="CreateRoomResponse.cpp" />
+    <ClCompile Include="ErrorResponse.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="GameDoesNotExistException.cpp" />
+    <ClCompile Include="GameException.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameQuestion.cpp" />
+    <ClCompile Include="GameRequestHandler.cpp" />
+    <ClCompile Include="GameUser.cpp" />
+    <ClCompile Include="GetGameResultsResponse.cpp" />
+    <ClCompile Include="GetPlayersInRoomRequest.cpp" />
+    <ClCompile Include="GetPlayersInRoomResponse.cpp" />
+    <ClCompile Include="GetQuestionResponse.cpp" />
+    <ClCompile Include="GetQuestionResponseAnswer.cpp" />
+    <ClCompile Include="GetRoomsResponse.cpp" />
+    <ClCompile Include="GetRoomStateResponse.cpp" />
+    <ClCompile Include="GetStatisticsResponse.cpp" />
+    <ClCompile Include="HandshakeException.cpp" />
+    <ClCompile Include="IDatabase.cpp" />
+    <ClCompile Include="InvalidJsonException.cpp" />
+    <ClCompile Include="IRequestHandler.cpp" />
+    <ClCompile Include="JoinRoomRequest.cpp" />
+    <ClCompile Include="JoinRoomResponse.cpp" />
+    <ClCompile Include="JsonResponsePacketSerializer.cpp" />
+    <ClCompile Include="LeaveGameResponse.cpp" />
+    <ClCompile Include="LeaveRoomResponse.cpp" />
+    <ClCompile Include="LoggedUser.cpp" />
+    <ClCompile Include="LoginManager.cpp" />
+    <ClCompile Include="LoginRequest.cpp" />
+    <ClCompile Include="LoginRequestHandler.cpp" />
+    <ClCompile Include="LoginResponse.cpp" />
+    <ClCompile Include="LogoutResponse.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuRequestHandler.cpp" />
+    <ClCompile Include="PlayerResults.cpp" />
+    <ClCompile Include="QueryFailureException.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="RequestHandlerFactory.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RoomAdminRequestHandler.cpp" />
+    <ClCompile Include="RoomData.cpp" />
+    <ClCompile Include="RoomDoesNotExistException.cpp" />
+    <ClCompile Include="RoomManager.cpp" />
+    <ClCompile Include="RoomMaxPlayersLimitReachedException.cpp" />
+    <ClCompile Include="RoomMemberRequestHandler.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="ServerConfigurationException.cpp" />
+    <ClCompile Include="ServerConfigurationInvalidJsonException.cpp" />
+    <ClCompile Include="ServerConfigurationLoadFileException.cpp" />
+    <ClCompile Include="ServerConfigurationMissingKeyException.cpp" />
+    <ClCompile Include="SignupRequest.cpp" />
+    <ClCompile Include="SignupResponse.cpp" />
+    <ClCompile Include="SocketManager.cpp" />
+    <ClCompile Include="SocketManagerException.cpp" />
+    <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="SqliteDatabase.cpp" />
+    <ClCompile Include="StartGameResponse.cpp" />
+    <ClCompile Include="StatisticsManager.cpp" />
+    <ClCompile Include="SubmitAnswerRequest.cpp" />
+    <ClCompile Include="SubmitAnswerResponse.cpp" />
+    <ClCompile Include="TriviaQuestionsApi.cpp" />
+    <ClCompile Include="UserStatistics.cpp" />
+    <ClCompile Include="WSAInitializer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

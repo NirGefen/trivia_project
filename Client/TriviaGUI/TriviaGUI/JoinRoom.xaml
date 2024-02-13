@@ -1,0 +1,58 @@
+﻿<Window x:Class="TriviaGUI.JoinRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriviaGUI"
+        mc:Ignorable="d"
+        Title="JoinRoom" Height="450" Width="672" Background="#FFD6EAB9" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="JoinRoomButton" Content="Join Room" HorizontalAlignment="Left" Height="74" Margin="272.697,335,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" FontSize="20" Click="OnClickJoinRoom" FontFamily="Rockwell">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF404443" Offset="0.096"/>
+                    <GradientStop Color="#FF00AEFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ArrowBack" Content="←" HorizontalAlignment="Left" Height="59.767" VerticalAlignment="Top" Width="46.782" FontWeight="Bold" FontSize="25" Click="OnClickArrowBack" FontFamily="Ravie">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF404443" Offset="0.096"/>
+                    <GradientStop Color="#FF00AEFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Title" Content="Rooms List" HorizontalAlignment="Left" Height="90.467" Margin="77,36.203,0,0" VerticalAlignment="Top" Width="235.303" FontWeight="Bold" FontSize="48" FontFamily="Segoe UI Light"/>
+        <ListView x:Name="RoomsList" Margin="77,109.5,371.197,105.5" VirtualizingStackPanel.IsVirtualizing="False" FontFamily="Segoe UI Light" Focusable="False" SelectionChanged="OnSelectChanged">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="GridViewColumnHeader">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="Title_Copy" Content="Players" HorizontalAlignment="Left" Height="90.467" Margin="351.5,36.203,0,0" VerticalAlignment="Top" Width="235.303" FontWeight="Bold" FontSize="48" FontFamily="Segoe UI Light"/>
+        <ListView x:Name="PlayersList" Margin="333.5,109.5,114.697,105.5" VirtualizingPanel.IsVirtualizing="False" FontFamily="Segoe UI Light">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="GridViewColumnHeader">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

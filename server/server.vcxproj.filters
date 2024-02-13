@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Requests">
+      <UniqueIdentifier>{173a232e-263f-4d51-aa3c-dff3388b92c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{9497e655-2b7c-4ca2-b443-da77a010bed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Libraries">
+      <UniqueIdentifier>{eb0fb789-5e23-4d3d-902d-2235c4376ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{7deac322-4658-4fc5-8db1-7b4151fa99e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Handlers">
+      <UniqueIdentifier>{d5d462ac-de39-4bfa-9461-f48800bbe529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{6ad7281c-a61c-4ad3-aeb0-76d80cb0db3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Configuration">
+      <UniqueIdentifier>{ba1acd4b-42b7-41da-8fd9-2945fc66ec99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Infastructure &amp; Important Classes">
+      <UniqueIdentifier>{4fe98df0-15dd-4426-897d-eb9715094ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Non Categorized Structs">
+      <UniqueIdentifier>{3d799fb3-6827-4af8-800b-e234061fdf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{8a743001-5af9-416f-a0b0-1e601d3097f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{7b8d33cb-2999-4def-8a06-3903b8caf959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Handlers">
+      <UniqueIdentifier>{6c83b228-1204-4813-b2cc-386a924c83de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{43573f84-4899-407b-b4e3-21ee8350426c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Infastructure &amp; Important Classes">
+      <UniqueIdentifier>{4e9e330b-38a1-49f5-a13a-815ee53fc1bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Configuration">
+      <UniqueIdentifier>{50cca762-6008-49dc-baaa-b9424d22da92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Non Categorized Structs">
+      <UniqueIdentifier>{1416275b-be59-4e83-a1d3-fef84223e110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests">
+      <UniqueIdentifier>{1e833477-6cfc-4d48-adbf-ccd4ee76b76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Responses">
+      <UniqueIdentifier>{afdbe62d-4a05-45e2-898a-e7a390b36ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{15e92565-0c3e-4a17-8891-d83ee4c22c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Responses">
+      <UniqueIdentifier>{96c56474-be43-468b-98c9-849e0773ca1d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CreateRoomResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetPlayersInRoomResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetRoomsResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetStatisticsResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinRoomResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="SignupResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\astreambuf.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\asyncrt_utils.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\base_uri.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Communicator.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\containerstream.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\filestream.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="HandshakeException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\http_client.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\http_compression.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\http_headers.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\http_listener.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\http_msg.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\interopstream.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nlohmann\json.hpp">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\json.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\oauth1.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\oauth2.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplx.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxcancellation_token.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxlinux.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxinterface.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxconv.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxtasks.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pplx\pplxwin.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\producerconsumerstream.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConfigurationException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConfigurationInvalidJsonException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConfigurationLoadFileException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConfigurationMissingKeyException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="IDatabase.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="IRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoutResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\uri.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\uri_builder.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\version.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\ws_client.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\ws_msg.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zlib.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zconf.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\rawptrstream.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAInitializer.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketManagerException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="TriviaQuestionsApi.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SignupRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\basic_types.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\cpprest_compat.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brotli\decode.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brotli\encode.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\fileio.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\http_helpers.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\http_server.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\http_server_api.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\nosal.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brotli\port.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\resource.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\SafeInt3.hpp">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\streams.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpprest\details\web_utilities.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="UserStatistics.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brotli\types.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="configConstants.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="protocolHeaderCodes.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="StatisticsManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="GetPlayersInRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonRequestPacketDeserializer.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonResponsePacketSerializer.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggedUser.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="SqliteDatabase.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandlerFactory.h">
+      <Filter>Header Files\Infastructure &amp; Important Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestInfo.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestResult.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Question.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFailureException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomData.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomDoesNotExistException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidJsonException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMemberRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomAdminRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseRoomResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetRoomStateResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaveRoomResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="StartGameResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMaxPlayersLimitReachedException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaveGameResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmitAnswerResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetQuestionResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="GetGameResultsResponse.h">
+      <Filter>Header Files\Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerResults.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="GetQuestionResponseAnswer.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmitAnswerRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRequestHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="GameData.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUser.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDoesNotExistException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameQuestion.h">
+      <Filter>Header Files\Non Categorized Structs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Communicator.cpp">
+      <Filter>Source Files\Infastructure &amp; Important Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateRoomResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetPlayersInRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="GetPlayersInRoomResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetRoomsResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetStatisticsResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="HandshakeException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="IRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinRoomResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonResponsePacketSerializer.cpp">
+      <Filter>Source Files\Infastructure &amp; Important Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggedUser.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="SignupRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="SignupResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestHandlerFactory.cpp">
+      <Filter>Source Files\Infastructure &amp; Important Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\Infastructure &amp; Important Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConfigurationException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConfigurationInvalidJsonException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConfigurationLoadFileException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConfigurationMissingKeyException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketManagerException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="TriviaQuestionsApi.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="UserStatistics.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="SqliteDatabase.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="WSAInitializer.cpp">
+      <Filter>Source Files\Infastructure &amp; Important Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Question.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFailureException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomData.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomDoesNotExistException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="InvalidJsonException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomAdminRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMemberRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseRoomResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetRoomStateResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaveRoomResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="StartGameResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMaxPlayersLimitReachedException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaveGameResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetQuestionResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="GetGameResultsResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmitAnswerResponse.cpp">
+      <Filter>Source Files\Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerResults.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="GetQuestionResponseAnswer.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmitAnswerRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRequestHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUser.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDoesNotExistException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameData.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="GameQuestion.cpp">
+      <Filter>Source Files\Non Categorized Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="GameException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="IDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
